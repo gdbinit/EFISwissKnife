@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B2051E81CBD073800ED412A /* database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B2051E61CBD073800ED412A /* database.cpp */; };
+		7B2051E91CBD073800ED412A /* database.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2051E71CBD073800ED412A /* database.h */; };
+		7B2051EB1CBD086100ED412A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2051EA1CBD086100ED412A /* libsqlite3.tbd */; };
+		7B5CC07E1640973E00C09320 /* initial_checks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CC07C1640973E00C09320 /* initial_checks.cpp */; };
+		7B5CC07F1640973E00C09320 /* initial_checks.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5CC07D1640973E00C09320 /* initial_checks.h */; };
+		7B7AFE521CBC0BB9004B5724 /* logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B7AFE501CBC0BB9004B5724 /* logging.cpp */; };
+		7B7AFE531CBC0BB9004B5724 /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7AFE511CBC0BB9004B5724 /* logging.h */; };
+		7BE844EB1C35B3890043F3C4 /* utlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE844EA1C35B3890043F3C4 /* utlist.h */; };
+		DEC1F264145ECE0F009A8407 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEC1F262145ECE0F009A8407 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B2051E61CBD073800ED412A /* database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = database.cpp; sourceTree = "<group>"; };
+		7B2051E71CBD073800ED412A /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = "<group>"; };
+		7B2051EA1CBD086100ED412A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7B5CC07C1640973E00C09320 /* initial_checks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = initial_checks.cpp; sourceTree = "<group>"; };
+		7B5CC07D1640973E00C09320 /* initial_checks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initial_checks.h; sourceTree = "<group>"; };
+		7B7AFE501CBC0BB9004B5724 /* logging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logging.cpp; sourceTree = "<group>"; };
+		7B7AFE511CBC0BB9004B5724 /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging.h; sourceTree = "<group>"; };
+		7BB3DF2B1CBFB9A000F4528C /* efi_pei_tables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = efi_pei_tables.h; sourceTree = "<group>"; };
+		7BE06A591CB7ABB100F94998 /* efi_guids.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = efi_guids.h; sourceTree = "<group>"; };
+		7BE06A5A1CB7D25200F94998 /* efi_system_tables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = efi_system_tables.h; sourceTree = "<group>"; };
+		7BE844E71C356E420043F3C4 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		7BE844EA1C35B3890043F3C4 /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* EFISwissKnife.pmc64 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = EFISwissKnife.pmc64; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4883FB1462396A00C469F0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DEC1F262145ECE0F009A8407 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2051EB1CBD086100ED412A /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* Decryptor */ = {
+			isa = PBXGroup;
+			children = (
+				7B2051EA1CBD086100ED412A /* libsqlite3.tbd */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = Decryptor;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1F262145ECE0F009A8407 /* main.cpp */,
+				7B5CC07C1640973E00C09320 /* initial_checks.cpp */,
+				7B5CC07D1640973E00C09320 /* initial_checks.h */,
+				7B7AFE501CBC0BB9004B5724 /* logging.cpp */,
+				7B7AFE511CBC0BB9004B5724 /* logging.h */,
+				7B2051E61CBD073800ED412A /* database.cpp */,
+				7B2051E71CBD073800ED412A /* database.h */,
+				7BE06A591CB7ABB100F94998 /* efi_guids.h */,
+				7BE06A5A1CB7D25200F94998 /* efi_system_tables.h */,
+				7BB3DF2B1CBFB9A000F4528C /* efi_pei_tables.h */,
+				7BE844E71C356E420043F3C4 /* config.h */,
+				7BE844EA1C35B3890043F3C4 /* utlist.h */,
+				DE4883FB1462396A00C469F0 /* README */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* EFISwissKnife.pmc64 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5CC07F1640973E00C09320 /* initial_checks.h in Headers */,
+				7B7AFE531CBC0BB9004B5724 /* logging.h in Headers */,
+				7B2051E91CBD073800ED412A /* database.h in Headers */,
+				7BE844EB1C35B3890043F3C4 /* utlist.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* EFISwissKnife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "EFISwissKnife" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EFISwissKnife;
+			productName = Decryptor;
+			productReference = D2AAC0630554660B00DB518D /* EFISwissKnife.pmc64 */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+			};
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "EFISwissKnife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* Decryptor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* EFISwissKnife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2051E81CBD073800ED412A /* database.cpp in Sources */,
+				DEC1F264145ECE0F009A8407 /* main.cpp in Sources */,
+				7B7AFE521CBC0BB9004B5724 /* logging.cpp in Sources */,
+				7B5CC07E1640973E00C09320 /* initial_checks.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = pmc64;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__MAC__=1",
+					"__EA64__=1",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = "/Applications/IDA\\ Pro\\ 6.95/idasdk695/include";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "/Applications/IDA\\ Pro\\ 6.95/idaq.app/Contents/MacOS/";
+				PRODUCT_NAME = EFISwissKnife;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_EXTENSION = pmc64;
+				EXECUTABLE_PREFIX = "";
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__MAC__=1",
+					"__EA64__=1",
+				);
+				HEADER_SEARCH_PATHS = "/Applications/IDA\\ Pro\\ 6.95/idasdk695/include";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "/Applications/IDA\\ Pro\\ 6.95/idaq.app/Contents/MacOS/";
+				PRODUCT_NAME = EFISwissKnife;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_EXTENSION = lmc64;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = __MAC__;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lida64";
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_EXTENSION = lmc64;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = __MAC__;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lida64";
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "EFISwissKnife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "EFISwissKnife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

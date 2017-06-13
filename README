@@ -1,0 +1,59 @@
+______________________.___
+\_   _____/\_   _____/|   |
+ |    __)_  |    __)  |   |
+ |        \ |     \   |   |
+/_______  / \___  /   |___|
+        \/      \/
+  _________       .__                 ____  __.      .__  _____
+ /   _____/_  _  _|__| ______ ______ |    |/ _| ____ |__|/ ____\____
+ \_____  \\ \/ \/ /  |/  ___//  ___/ |      <  /    \|  \   __\/ __ \
+ /        \\     /|  |\___ \ \___ \  |    |  \|   |  \  ||  | \  ___/
+/_______  / \/\_/ |__/____  >____  > |____|__ \___|  /__||__|  \___  >
+        \/                \/     \/          \/    \/              \/
+
+EFI Swiss Knife
+An IDA plugin to improve (U)EFI reversing
+
+Copyright (C) 2016, 2017  Pedro Vilaça (fG!) - reverser@put.as - https://reverse.put.as
+
+This is an IDA plugin to assist in (U)EFI binaries reversing.
+It is based on original work by Snare - https://github.com/snare/ida-efiutils
+Since I hate Python I did something new in C adding some extra features that I wanted.
+
+Tested with IDA 6.9/6.95 Mac OS X version.
+
+To compile for OS X use the Makefile or the XCode Project.
+
+You will need to edit the XCode project and set the paths to the SDK.
+(default is to /Applications/IDA Pro 6.95/idasdk695)
+
+You should edit config.h and modify the log and database paths.
+
+Copy EFISwissKnife.pmc64 to /Applications/IDA Pro 6.95/idaq.app/Contents/MacOS/plugins/
+
+By default it only compiles the plugin to the 64 bit version of IDA. If you want the plugin to 32 bit version
+you need to edit the Xcode Project and change __EA64__=1 to 0.
+
+To call it from IDA use Shift+F2 and then
+1) To display a menu with run options: RunPlugin("EFISwissKnife", 1);
+2) To run with default options: RunPlugin("EFISwissKnife", 0);
+3) To run in batch mode: RunPlugin("EFISwissKnife", 2);
+
+The plugin supports batch mode in case you want to mass analyse EFI binaries and gather some statistics about services usage.
+
+You probably want to update the GUIDs available at efi_guids.h.
+
+This code is targetting Mac OS X EFI binaries. It should work with other platforms UEFI binaries without problems or with minor
+modifications and updates.
+
+Only PE binaries supported, no TE binaries supported yet.
+
+That's it! Enjoy :-)
+
+fG!
+
+v1.0 - Initial version
+
+IDA BUGS:
+Another bug is related to the PLUGIN_UNL flag. It is used to "Unload the plugin immediately after calling 'run'.".
+If this option is set, it crashes the Windows version. Mac version seems do to fine with it.
